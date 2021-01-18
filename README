@@ -1,0 +1,44 @@
+If gawk is not there, you need to install it.
+On a Mac:
+sudo port install gawk
+The default location of gawk is  
+/opt/local/bin/gawk
+
+Login to www.duolingo.com
+Open www.duolingo.com/users/your_user_name ,
+and save the json file as your_user_name.json
+
+chmod 755 ab_test.gawk
+
+Call the program to open up your json file.
+./ab_test.gawk your_user_name.json
+
+You can also open up multiple json files.
+./ab_test.gawk *.json
+
+Sample output.
+$ ./ab_tests.gawk users_JimOser10/*.json
+users_JimOser10/17.01.2021.16.54.JimOser10.json
+  1 "midas_ios_lower_ramp_up_price":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+  2 "retention_web_text_link_app":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  3 "web_remove_howler":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  4 "mc_add_es_b1_def_dial_gap_complete_2":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  5 "learning_be_skill_practice_variety_v3":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  6 "midas_nerf_stories_xp_1":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  7 "retention_bandit_cull_all_types":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+  8 "retention_reminders_streak_habit_copy_2":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+  9 "midas_streak_repair_push_notification":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+ 10 "web_prefetch_tts_per_challenge":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+ 11 "tree_es_en_v30_experiment":{"contexts":[],"treated":true,"destiny":"33","condition":"33","eligible":true 
+users_JimOser10/17.01.2021.JimOser10.json
+  1 "midas_ios_lower_ramp_up_price":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+  2 "retention_web_text_link_app":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  3 "web_remove_howler":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  4 "mc_add_es_b1_def_dial_gap_complete_2":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  5 "learning_be_skill_practice_variety_v3":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  6 "midas_nerf_stories_xp_1":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  7 "retention_bandit_cull_all_types":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+  8 "midas_streak_repair_push_notification":{"contexts":[],"treated":true,"destiny":"control","condition":"control","eligible":true 
+  9 "retention_reminders_streak_habit_copy_2":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+ 10 "web_prefetch_tts_per_challenge":{"contexts":[],"treated":true,"destiny":"experiment","condition":"experiment","eligible":true 
+ 11 "tree_es_en_v30_experiment":{"contexts":[],"treated":true,"destiny":"33","condition":"33","eligible":true 
